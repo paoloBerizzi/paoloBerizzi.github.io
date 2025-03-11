@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Technology Labels
+--------------------------------------------------------------*/
+.tech-label {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 3px;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.tech-label:hover {
+  transform: translateY(-2px);
+}
+
+/* Different color variations */
+.tech-label.programming-language {
+  background-color: #168130;
+}
+
+.tech-label.dataviz {
+  background-color: #F7DF1E;
+  color: #000;
+}
+
+.tech-label.data-science {
+  background-color: #20B2AA;
+}
+
+.tech-label.ml {
+  background-color: #E34C26;
+}
+
+.tech-label.database {
+  background-color: #336791;
+}
+
+.tech-label.cloud {
+  background-color: #FF9900;
+}
+
+.tech-label.streamlit {
+  background-color: #9C27B0;
+}
+
+.tech-label.tools {
+  background-color: #607D8B;
+}
