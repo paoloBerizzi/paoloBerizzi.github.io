@@ -531,6 +531,25 @@ section {
   border: 2px solid #0563bb;
 }
 
+.resume-item .sub-resume-item {
+    padding: 0 0 20px 25px;
+    margin-top: -15px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
+
+.resume-item .sub-resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
