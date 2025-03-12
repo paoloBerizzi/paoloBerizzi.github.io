@@ -24,7 +24,7 @@
   background-color: #168130;
 }
 
-.tech-label.dataviz {
+.tech-label.yellow {
   background-color: #F7DF1E;
   color: #000;
 }
@@ -45,7 +45,7 @@
   background-color: #FF9900;
 }
 
-.tech-label.streamlit {
+.tech-label.dataviz {
   background-color: #9C27B0;
 }
 
