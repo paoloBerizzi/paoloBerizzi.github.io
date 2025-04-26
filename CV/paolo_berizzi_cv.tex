@@ -1,0 +1,177 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[hipsterpaolo]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+
+\pagestyle{empty}
+
+\begin{document}
+\fontsize{14pt}{14pt}
+
+\thispagestyle{empty}
+
+%------------------------------------------------
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.37}[0.6]
+\begin{paracol}{2}
+\hbadness5000
+
+\paracolbackgroundoptions
+
+\footnotesize
+{
+\setfontcolourwhite
+\begin{center}
+    \roundpic{profile_img_crop.jpg}
+\end{center}
+
+\section*{Details}
+\infobubble{\faAt}{myblue}{white}{\underline{\href{mailto:pberizz@gmail.com}{pberizz@gmail.com}}}
+\\
+\infobubble{\faPhone}{myblue}{white}{+46 79 353 41 64}
+\\
+\infobubble{\faMapMarker}{myblue}{white}{Stockholm, Sweden}
+\\
+\infobubble{\faLinkedin}{myblue}{white}{\underline{\href{https://www.linkedin.com/in/paoloberizzi/}{linkedin.com/in/paoloberizzi}}}
+\\
+\infobubble{\faUser}{myblue}{white}{\underline{\href{https://paoloberizzi.github.io/}{paoloberizzi.github.io}}}
+
+\section*{Technical skills}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages:} Python, SQL, Scala
+  \item \textbf{ML/DS:}  StatsModels, BoTorch, Scikit-learn, PyTorch, TensorFlow, Keras
+  \item \textbf{Data Visualization:} Plotly, Streamlit, Tableau
+  \item \textbf{Software Development:} Django, Celery, Git
+  \item \textbf{DevOps \& MLOps:} MLflow, Flyte, Docker
+  \item \textbf{Big Data \& Cloud:} Spark, Kafka, AWS
+\end{itemize}
+
+\section*{Organizational skills}
+Demonstrated strong organizational skills through various leadership roles.
+Through group projects and scouting, I have honed my ability to analyze complex problems
+comprehensively and make informed decisions, even under stressful conditions.
+Proficient in design thinking and agile methodologies, developed through hands-on project work.
+
+\section*{Communication skills}
+Developed strong communication skills through extensive experience in team
+projects and international business cases.
+My involvement in scouting and volunteering has further enhanced my
+ability to interact effectively with diverse groups. My passion for data visualization,
+applied in numerous projects, enables clear and impactful presentation of complex data.
+
+\section*{Language Skills}
+\begin{itemize}[leftmargin=*]
+    \item Italian: Native
+    \item English: Fluent
+    \item Swedish: Beginner
+\end{itemize}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+
+}
+%-----------------------------------------------------------
+\switchcolumn
+{\huge \color{myblue}\textbf{Paolo Berizzi}}
+
+\bigskip
+
+{\large Data Scientist}
+
+{
+\setfontcolour
+\bigskip
+Data Scientist with expertise in time-series analysis and data visualization.
+\\
+Skilled in Python and cloud-native solutions.
+
+\section*{Experience}
+\cvexperience{Data Scientist}
+{\underline{\href{https://www.xylem.com/en-us/brand/vue/}{Xylem VUE}}}{Aug 2023 - Present}
+{
+    Actively contributing to the design, development, and deployment of software solutions that leverage machine learning to process raw data and deliver useful insights.
+    I have worked on projects focused on pump degradation and analysis of metered water consumption to optimize distribution in complex networks.\\
+    Domain of expertise:
+    \begin{itemize}[leftmargin=*]
+        \item Predictive Maintenance
+        \item Signal analysis
+        \item Time-series disaggregation
+    \end{itemize}
+}
+
+\cvexperience{Engineering Leadership Development Program}
+{\underline{\href{https://www.xylem.com/en-us/}{Xylem}}}{Aug 2021 - Aug 2023}
+{
+    Two-year program of three rotational assignments driven by business priorities.
+    I contributed to multiple teams and gained experience from various brands of the company, I worked both onsite and remotely,
+    collaborating with people in different regions of the world.
+    \begin{itemize}[leftmargin=*]
+        \item Developed a web app to use Bayesian optimization to increase design efficiency.
+        \item Deployed a data-driven chlorine estimation to enable water purification in under-resourced conditions.
+        \item Researched ML methods for leak detection and localization in pipes.
+    \end{itemize}
+}
+
+\cvexperience{Internship & Master Thesis}
+{\underline{\href{https://www.volvocars.com/se/}{Volvo Cars}}}{Jan 2021 - July 2021}
+{Internship in the department of Safe Vehicle Automation with the focus on
+generation of large quantities of synthetic data by learning and mirroring
+small samples of real data. Investigation of neural network architectures for
+computer vision and their impact on the generation of synthetic data.}
+
+\section*{Education}
+\cvexperiencedoublelocation{Master of Science in Data Science}
+{KTH, Stockholm, Sweden}{Aug 2020 - July 2021}
+{TU/e, Eindhoven, Netherlands}{Aug 2019 - July 2020}
+{Double degree program offered by \underline{\href{https://masterschool.eitdigital.eu/}{EIT Digital Master School}}, which
+combines technical competence with skills in innovation and
+entrepreneurship.
+Key projects:
+\begin{itemize}[leftmargin=*]
+    \item Promotion of drone services to win market share for Institut De Soudure Group.
+    \item Ideation and design of business models for truck platooning at DAF Truck.
+\end{itemize}
+}
+
+\cvexperience{Summer School}{University of Ljubljana, Slovenia}{Aug 2020}
+{Program on Digital Transformation for Urban Resilience, organized by EIT
+Digital. I worked on a business development project addressing the
+creation of renewable energy communities for EIMV Research Institut.}
+
+\cvexperience{Bachelor of Science in Computer Science}{University of Trento, Italy}{Sept 2016 - July 2019}{}
+
+
+%%----------------------------------------------------------------------------------------
+%%	FINAL FOOTER
+%%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+
+\fontfamily{\sfdefault}\selectfont \color{black!70}
+{
+    References provided upon request.\newline
+    I authorize the processing of personal data present in the CV according to the Regulation of the European Parliament 679/2016.
+}
+}
+\end{paracol}
+
+\end{document}
